@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script src="index.js"></script>
+<script type="text/javascript">
+(function(){
+  emailjs.init("dqahaeMmkLpA4hQyj");
+})();
+</script>
+</head>
+
+<body>
+    <section id="landing-page"onmousemove="moveBackground(event)">
+        <nav>
+
+            <figure>
+                <img id="personal-logo" src="./assets/logoBlack.png" alt="">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                    <a class="nav__link--anchor link__hover-effect
+                link__hover-effect--black" href="#">About</a>
+                </li>
+                <li class="nav__link">
+                    <a class="nav__link--anchor link__hover-effect
+                link__hover-effect--black click" href="#projects">Projects</a>
+                </li>
+                <li class="nav__link" onclick="toggleModal()">
+                    <a class="nav__link--anchor link__hover-effect
+                link__hover-effect--black" href="#">Contact</a>
+                </li>
+                <li class="nav__link click" onclick="toggleContrast()">
+                    <a class="nav__link--anchor link__hover-effect
+                link__hover-effect--black" href="#"><i class="fas fa-adjust"></i></a>
+                </li>
+
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">Hi</h1>
+                <h1 class="title orange">I'm Dan</h1>
+                <p class="header__para">
+                    I'm a <b class="orange">Software Engineer</b> with a passion for building web application with great
+                    user experiences.
+                    <br>
+                    Here's a bit more <b class="orange click"onclick="toggleModal()">about me</b>.
+                </p>
+                <div class="social__list">
+                    <a class="social__link click" href="https://www.linkedin.com/in/daniel-welsh-04a934151?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Bv3D61I8PSMauUvngWrEZUA%3D%3D" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a class="social__link click" href="https://github.com/Danw333" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a class="social__link click" href="/assets/FE DAN CV.pdf" target="_blank">
+                        <i class="fas fa-file-pdf"></i>
+                    </a>
+                </div>
+            </div>
+        </header>
+        <a href="#"><button class="mail__btn click" onclick="toggleModal()">
+            <i class="fas fa-envelope"></i>
+        </button></a>
+        
+        <a href="#projects" class="scroll">
+            <div class="scroll__icon click"></div>
+        </a>
+        <div class="modal">
+            <div class="modal__half modal__about">
+              <h3 class="modal__title modal__title--about">Here's a bit about me.</h3>
+              <h4 class="modal__sub-title modal__sub-title--about">Software Engineer.</h4>
+              <p class="modal__para">
+                I'm a full stack <b class="orange">software engineer</b> with experience developing
+                websites for my business clients.
+                <br>
+                I have knowledge in solving extremely difficult engineering
+                problems with <b class="orange">React</b>, <b class="orange">TypeScript</b> and <b
+                  class="orange">MobX</b>.
+              </p>
+              <div class="modal__languages">
+                <figure class="modal__language">
+                  <img class="modal__language--img"
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
+                    alt="">
+                  <span class="language__name">HTML</span>
+                </figure>
+                <figure class="modal__language">
+                  <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png"
+                    alt="">
+                  <span class="language__name">CSS</span>
+                </figure>
+                <figure class="modal__language">
+                  <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
+                    alt="">
+                  <span class="language__name">JavaScript</span>
+                </figure>
+                <figure class="modal__language">
+                  <img class="modal__language--img"
+                    src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png" alt="">
+                  <span class="language__name">TypeScript</span>
+                </figure>
+      
+                <figure class="modal__language">
+                  <img class="modal__language--img" src="https://mobx.js.org/img/mobx.png" alt="">
+                  <span class="language__name">MobX</span>
+                </figure>
+                <figure class="modal__language">
+                  <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
+                    alt="">
+                  <span class="language__name">React</span>
+                </figure>
+                <figure class="modal__language">
+                  <img class="modal__language--img" src="https://cdn.iconscout.com/icon/free/png-256/vue-282497.png" alt="">
+                  <span class="language__name">Vue</span>
+                </figure>
+                <figure class="modal__language">
+                  <img class="modal__language--img"
+                    src="https://cdn.iconscout.com/icon/free/png-256/nuxt-dot-js-3628959-3030184.png" alt="">
+                  <span class="language__name">Nuxt</span>
+                </figure>
+              </div>
+            </div>
+            <div class="modal__half modal__contact">
+              <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+              <h3 class="modal__title modal__title--contact">
+                Let's have a chat!
+              </h3>
+              <h3 class="modal__sub-title modal__sub-title--contact">
+                I'm currently open to new opportunities.
+              </h3>
+              <form id="contact__form" onsubmit="contact(event)">
+                <div class="form__item">
+                  <label class="form__item--label">Name</label>
+                  <input class="input" name="user_name" type="text" required></input>
+                </div>
+                <div class="form__item">
+                  <label class="form__item--label">Email</label>
+                  <input class="input" name="user_email" type="email" required></input>
+                </div>
+                <div class="form__item">
+                  <label class="form__item--label">Message</label>
+                  <textarea class="input" name="message" type="text" required></textarea>
+                </div>
+                <button id="contact__submit" class="form__submit">
+                  Send it my way
+                </button>
+              </form>
+              <div class="modal__overlay modal__overlay--loading">
+                <i class="fas fa-spinner"></i>
+              </div>
+              <div class="modal__overlay modal__overlay--success">
+                Thanks for the message! Looking forward to speaking to you soon.
+              </div>
+            </div>
+          </div>
+          <img src="./assets/semi circle.svg" class="shape shape--0" alt="">
+          <img src="./assets/circle.svg" class="shape shape--1" alt="">
+          <img src="./assets/squiggly.svg" class="shape shape--2" alt="">
+          <img src="./assets/circle.svg" class="shape shape--3" alt="">
+          <img src="./assets/triangle.svg" class="shape shape--4" alt="">
+          <img src="./assets/circle.svg" class="shape shape--5" alt="">
+          <img src="./assets/squiggly.svg" class="shape shape--6" alt="">
+          <img src="./assets/circle.svg" class="shape shape--7" alt="">
+          <img src="./assets/semi circle.svg" class="shape shape--8" alt="">
+    </section>
+    <section id="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here are some of my <span class="orange">projects</span>
+                </h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/online-books-1536x903.jpg" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Digital Bookstore
+              
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                   Implemented languages like Html, CSS, JavaScript, and Raect libraries. 
+                                </h4>
+                                <p class="project__description--para">
+                                    
+                                </p>
+                                <div class="project__description--links">
+                                    <a href="https://github.com/Danw333/Ecom.git" class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/Frontend Simplified.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Twitter Clone 
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                    Html, CSS, JavaScript, Vue, React, Nuxt, Firebase, and able post, like and comment.
+                                </h4>
+                                <p class="project__description--para">
+                                    
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <img src="./assets/Eportfolio YT.png" class="project__img" alt="">
+                            <div class="project__wrapper--bg"></div>
+                            <div class="project__description">
+                                <h3 class="project__description--title">
+                                    Ecommerce Site 
+                                </h3>
+                                <h4 class="project__description--sub-title">
+                                  Tailwind CSS, Typescript, Intercepting Routes, NextJS, dynamic API rendering. 
+                                </h4>
+                                <p class="project__description--para">
+                                   
+                                <div class="project__description--links">
+                                    <a href="https://store-front-ruddy-six.vercel.app/" target="_blank"
+                                        class="project__description--link">
+                                        <i class="fab fa-youtube"></i>
+                                    </a>
+                                    <a href="https://github.com/Danw333" target="_blank"
+                                        class="project__description--link">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                    <a href="https://github.com/Danw333" target="_blank"
+                                        class="project__description--link">
+                                        <i class="fas fa-link"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="footer__row">
+            <figure><img class = "footer__logo--img" src="./assets/new logo.png" alt=""></figure>
+            <div class="footer__social--list">
+                <a href="https://www.linkedin.com/in/daniel-welsh-04a934151" target="_blank"
+                    class="footer__social--link link__hover-effect--white link__hover-effect">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/Danw333" target="_blank"
+                    class="footer__social--link link__hover-effect--white link__hover-effect">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="#" onclick="toggleModal()" 
+                    class="footer__social--link link__hover-effect--white link__hover-effect">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="/assets/FE DAN CV.pdf" target="_blank"
+                    class="footer__social--link link__hover-effect--white link__hover-effect">
+                    <i class="fas fa-file-pdf"></i>
+                </a>
+            </div>
+            </div>
+            <div class="footer__copyright"><i class="fas fa-copyright    "> 2023</i></div>
+    </footer>
+</body>
+
+</html>
