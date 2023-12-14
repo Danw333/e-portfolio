@@ -26,6 +26,7 @@ a {
 }
 .click {
     transition: all 300ms ease;
+    cursor: pointer;
 }
 
 #personal-logo {
