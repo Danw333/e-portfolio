@@ -127,6 +127,7 @@ label {
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 12px;
+    z-index: 10;
   }
   
 .orange {
@@ -476,6 +477,7 @@ nav {
     text-align: center;
     font-size: 48px;
     margin-bottom: 60px;
+    z-index: 10;
   }
   
   .project {
@@ -595,7 +597,7 @@ nav {
   .shape--0 {
     top: 15vh;
     left: 5vw;
-    z-index: 5;
+
     
   }
   .shape--1 {
@@ -702,4 +704,3 @@ nav {
       padding: 40px;
     }
   }
-  
